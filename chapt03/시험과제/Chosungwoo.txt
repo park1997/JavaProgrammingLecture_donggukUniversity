@@ -1,0 +1,53 @@
+package Hw;
+import java.util.Scanner;
+public class Test {
+	 public static void main(String[] args) {
+	        // TODO Auto-generated method stub
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("(1≤K≤N≤100) 이내로 N 과 K를 차례로 입력해주세요"  );
+	        int N=sc.nextInt();
+	        int K=sc.nextInt();
+	        
+	        	
+	        int circle[]= new int[N];
+	        int condition[]= new int[N];
+	        int select=0;int finish=0;
+	        
+	        if(K<=N) {
+	        	if(1<=N) {
+	        		if(N<=100) {   // 만약 조건에 맞지 않는 수가 나온다면 수를 잘못 입력하셨습니다. 라고 나오게 설정한다.
+	        System.out.print("<");
+	       
+	
+	        for(int i =0;i<=N-1;i++) // 먼저 원을 만들어 줍니다 
+	        	circle[i]=i+1;
+	        for(int i=0;;i++) {
+	        	if(condition[i]==0) {   //순서가 지날때 마다  select 는 1씩 올라갑니다. 하지만 condition이 1이라면 (이미 사용한 숫자라면 ) select는 올라가지 않습니다.
+	        		select++;
+	                if(select%K==0) {   //만약 select가 m(입력값)번째에 있는 숫자 즉 나눠서 0이 되는 수 라면 condition은 1로 바뀝니다. 
+	                	condition[i]=1;
+	                	finish++;    // 모든 숫자가 선택 되면 끝내기 위에 숫자가 하나 입력 될때 마다 finish 값이 1씩 오릅니다.
+	                    if(finish==N) {   //finish 숫자가 계속 오르다 만약 끝나는 지점이 되면 현자 값을 써주고 > 로 마무리를 하고 break 를 통해 종료 시켜 줍니다.
+	                        System.out.print(circle[i]);
+	                        System.out.print(">");
+	                        break;    
+	                    }
+	                System.out.print(circle[i]+", "); // condition이 1이 되고 모든 숫자가 입력되지 않았다면  현재 위치하는 값을 출력 시키고 , 를 찍어 줍니다..
+	                }
+	            }
+	            if(i==(N-1))i=-1; // 한 circle을 돌았지만 아직 입력되지 않은 수를 입력하기 위에 i를 재 설정 해줍니다. 
+	        }
+	        		}
+	        		else
+	        			System.out.println("숫자를 잘못 입력하셨습니다.");
+	              }
+	        	else
+		        	System.out.println("숫자를 잘못 입력하셨습니다.");	
+	        }
+	        else
+	        	System.out.println("숫자를 잘못 입력하셨습니다.");
+	 }
+
+}
+
+
