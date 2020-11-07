@@ -1,4 +1,4 @@
-import util.java.Scanner
+import util.java.Scanner;
 
 public class Main {
 
