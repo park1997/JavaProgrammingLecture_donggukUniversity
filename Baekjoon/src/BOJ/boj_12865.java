@@ -1,10 +1,11 @@
-import java.io.IOException;
+package BOJ;
 import java.util.*;
 
-public class Main {
 
-	public static void main(String[] args) throws IOException {
-		
+public class boj_12865 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int num=sc.nextInt();
 		int volume=sc.nextInt();
@@ -26,7 +27,6 @@ public class Main {
 		System.out.println(dp[num][volume]);
 		sc.close();
 		
-		
-		
 	}
+
 }
