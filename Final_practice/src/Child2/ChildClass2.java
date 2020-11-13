@@ -22,14 +22,12 @@ public class ChildClass2 {
 		System.out.println(" -- getInfo() --");
 		System.out.println(" name : "+name);
 		System.out.println(" gender : "+gender);
-		System.out.println(" age : "+age);
-		
+		System.out.println(" age : "+age);	
 	}
 	
 	public void getInfo(int x, int y) {
 		System.out.println("-- getInfo(int x, int y) --");
 		System.out.printf("paremater --> x :%d , y : %d\n",x,y);
-
 	}
 	
 	public void getInfo(String s1, String s2) {
