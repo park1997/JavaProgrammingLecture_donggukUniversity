@@ -9,11 +9,18 @@ public class PartTimeJob {
 	private int minimum_wage=8560;
 
 	
-	//持失切
+	//持失切1
 	public PartTimeJob(String n, int w) {
 		this.name=n;
 		this.worker_num=w;
 		
+	}
+	//持失切2
+	public PartTimeJob(String n,int w,int h) {
+		// TODO Auto-generated constructor stub
+		this.name=n;
+		this.worker_num=w;
+		this.hourly_wage=h;
 	}
 	
 	public void workingTime (int h,int m) {

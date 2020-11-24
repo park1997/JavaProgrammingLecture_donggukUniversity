@@ -3,8 +3,14 @@ package javaFinalHW;
 public class MoneyCalculate {
 	private int real_hourly_wage;
 	
+	//생성자
+	public MoneyCalculate() {
+		// TODO Auto-generated constructor stub
+		this.real_hourly_wage=real_hourly_wage;
+	
+	}
 	//최저시급보다 덜 줬을 경우
-	public void checkWage(PartTimeJob people) {
+		public void checkWage(PartTimeJob people) {
 		if (people.getHourly_wage()<people.getMinimum_wage()) {
 			System.out.printf("%d is less than minimum hourly wage %d You have to give more money!!!\n",people.getHourly_wage(),people.getMinimum_wage());
 		}else {
