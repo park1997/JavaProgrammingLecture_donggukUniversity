@@ -1,7 +1,10 @@
-import java.util.*;
-public class Main2 {
+package 단어개수세기;
 
-	public static void main(String[] args)  {
+import java.util.Scanner;
+
+public class cnt {
+
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		System.out.print("문장 입력 >");
@@ -15,8 +18,6 @@ public class Main2 {
 			}
 		}
 		System.out.println(str1+"은 총 "+cnt+"개 있습니다.");
-		
-		
 	}
 
 }
