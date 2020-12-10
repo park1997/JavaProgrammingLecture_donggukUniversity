@@ -13,8 +13,8 @@ public class PartTimeJob {
 	public PartTimeJob(String n, int w) {
 		this.name=n;
 		this.worker_num=w;
-		
 	}
+	
 	//»ý¼ºÀÚ2
 	public PartTimeJob(String n,int w,int h) {
 		// TODO Auto-generated constructor stub

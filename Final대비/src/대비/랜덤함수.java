@@ -15,6 +15,8 @@ public class ·£´ıÇÔ¼ö {
 		Random rd = new Random();
 		int a=rd.nextInt(5);
 		System.out.println(a);
+		
+		
 	}
 
 }
