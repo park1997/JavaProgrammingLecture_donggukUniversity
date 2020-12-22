@@ -6,7 +6,7 @@ public class Main {
 
 		//1-1¹ø
 		Example ex = new Example();
-		System.out.println(ex.count("oxxoooxoox","o" ));
+		System.out.println(ex.count("oxxoooxoox",'o' ));
 		
 		//1-2¹ø
 		Example.capital('n');

@@ -1,20 +1,40 @@
 import java.util.*;
-public class Main2 {
+public class main2 {
 
-	public static void main(String[] args)  {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.print("문장 입력 >");
-		String str= sc.next();
-		System.out.print("찾을 단어 >");
-		String str1 = sc.next();
-		int cnt=0;
-		for(int i=0;i<str.length()-str1.length()+1;i++) {
-			if(str.substring(i,i+str1.length()).equals(str1)) {
-				cnt+=1;
+		long a = sc.nextLong();
+		long b = sc.nextLong();
+		int[] arr_a= new int[10001];
+		int[] arr_b= new int[10001];
+		
+		for(int i=1;i<Math.sqrt(a)+1;i++) {
+			if(a%i==0) {
+				arr_a[i]=i;
 			}
 		}
-		System.out.println(str1+"은 총 "+cnt+"개 있습니다.");
+		
+		for(int i=1;i<Math.sqrt(b)+1;i++) {
+			if(b%i==0) {
+				arr_b[i]=i;
+			}
+		}
+		
+		for(int i=1;i<Math.sqrt(a)+1;i++) {
+			if(a%i==0) {
+				arr_a[i]=i;
+				System.out.println(i);
+			}
+		}
+		
+		
+		
+		sc.close();
+		
+		
+		
+		
 		
 		
 	}
